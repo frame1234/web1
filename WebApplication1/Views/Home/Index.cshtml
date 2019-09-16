@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@if (ViewData["ShowAlert"] != null && (bool)ViewData["ShowAlert"] == true)
+{
+    int i = 1 + 1;
+    <div class="alert alert-success" role="alert">
+        ทางเราขอขอบคุณคุณ @ViewData["Name"] ทางเราจะติดต่อกลับไปที่@ViewData["Email"]
+    </div>
+    <text>
+        ขอขอบคุณครับ @ViewData["ShowAlert"]
+    </text>
+
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
